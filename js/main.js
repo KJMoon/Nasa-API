@@ -15,11 +15,13 @@ function getFetch(){
       .then(data => {
         console.log(data)
         if(data.media_type === 'image'){
+            document.querySelector('.video').style.display = 'none'
+            document.querySelector('.image').style.display = 'inline'
             document.querySelector('img').src = data.hdurl
-            document.querySelector('iframe').src = ''
         }else if(data.media_type === 'video'){
+            document.querySelector('.image').style.display = 'none'
+            document.querySelector('.video').style.display = 'inline'
             document.querySelector('iframe').src = data.url
-            document.querySelector('img').src = ''
         }
 
         document.querySelector('h3').innerText = data.explanation
@@ -28,4 +30,3 @@ function getFetch(){
           console.log(`error ${err}`)
       });
 }
-

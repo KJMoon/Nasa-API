@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
+    	<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>NASA's APOD APP</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<section class="firstOne">
+			<h1>Picture Of The Day</h1>
+			<input type="date" name="" value="">
+			<button class="myButton" type="button" name="button">Get Media</button>
+			<h2>NASA RULES!</h2>
+		</section>
+		
+		<section class="row">
+			<div class="column">
+				<h3>Explanation</h3>
+			</div>
+			<div class="column">
+				<img class="image" src="" alt="Picture of the day">
+				<iframe class="video" src="" frameborder="0"></iframe>
+			</div>
+		</section>
 
-		<h1>Picture Of The Day</h1>
-		<input type="date" name="" value="">
-		<button type="button" name="button">Get Media</button>
-
-		<h2>NASA RULES!</h2>
-		<img src="" alt="">
-		<iframe src="" frameborder="0"></iframe>
-		<h3>Explanation</h3>
-
+		<div class="background-container">
+			<img class="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+			<div class="clouds"></div>			
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
