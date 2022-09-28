@@ -68,6 +68,7 @@ input {
   font-size: 20px;
   line-height: 28px;
   padding: 10px;
+  cursor: pointer;
 }
 
 /******************************************
@@ -80,6 +81,7 @@ input {
 
 .myButton:hover {
   background: #1C6EA4;
+  cursor: pointer;
 }
 
 .myButton:active {
